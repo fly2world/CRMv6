@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" android:background="#ffffff">
+
+    <!-- ============== 中间 ===================== -->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <!-- 底部 Tab -->
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:orientation="vertical"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent">
+        <!-- 细线 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="#2e7ef7" />
+        <!-- 图标 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="50dp"
+            android:minHeight="50dp"
+            android:layout_width="fill_parent"
+            android:paddingTop="4dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView1"
+                android:src="@drawable/tab_01"
+                android:layout_weight="1"
+                android:onClick="selectTab1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@drawable/tab_02"
+                android:layout_weight="1"
+                android:onClick="selectTab2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:src="@drawable/tab_03"
+                android:layout_weight="1"
+                android:onClick="selectTab3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView4"
+                android:src="@drawable/tab_04"
+                android:layout_weight="1"
+                android:onClick="selectTab4" />
+
+        </LinearLayout>
+        <!-- 图标 ========== END -->
+    </LinearLayout>
+
+</RelativeLayout>
